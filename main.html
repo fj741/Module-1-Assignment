@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Beatles Fan Page</title>
+    <link rel="stylesheet" href="../main.css">
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+    <meta name="keywords" content="The Beatles, Fanpage">
+    <meta name="description" content="A ">
+    <meta name="author" content="Jack Farrell">
+    <meta http-equiv="refresh" content="300">
+  </head>
+  <body>
+    <div id="navigation">
+      <h3><a href="main.html" class="logo">Beatles <br>Fan Page</a></h3>
+      <ul>
+        <li><a href="legacy.html" class="legacy-link">Legacy</a></li>
+        <li><a href="discography.html">Discography</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="main.html">Home</a></li>
+      </ul>
+    </div>
+    <div id="header">
+      <button><a href="#about-us">Jump to About Us!</a></button>
+    </div>
+    <div class="container">
+      <div class="col-5">        
+        <h1 id="about-us">About</h1>
+        <p>Welcome to the unoffical Beatles Fan Page! <br>
+           In the early 1960's, four men from Liverpool formed a band called the Beatles, and since then have inspired musicians across the world.
+           They were so successful, selling over 600 million records all over the world, that they spawned the growth of a phenomenon known as the <span>Beatlemania</span>.
+        </p>
+        <p>If you've never heard their music, check out the Offical Music video to the hit 1968 song <span>Hey Jude</span></p>
+        <iframe src="https://www.youtube.com/embed/A_MjCqQoLLA" frameborder="0"></iframe>      
+      </div>
+      <div class="form">
+        <h3>More on you!</h3>
+        <h3>What is your favorite album?</h3>
+        <form action="action_page.php" method="post" target="_blank">
+          <label for="firstname">First Name:</label>
+          <input type="text" placeholder="Your first name"> 
+          <br>
+          <label for="lastname">Last Name:</label>
+          <input type="text" placeholder="Your second name">
+          <br>
+          <label for="email">Email:</label>
+          <input type="text" placeholder="Your email">
+          <br>
+          <label for="favorite-album">Favorite Album:</label>
+          <input list="albums" type="select" placeholder="Favourite album" name="album">
+          <datalist id="albums">
+            <option value="Revolver"></option>
+            <option value="Sgt. Pepper's Lonely Hearts Club Band"></option>
+            <option value="Rubber Soul"></option>
+            <option value="A Hard Day's Night"></option>
+            <option value="Abbey Road"></option>
+            <option value="The White Album"></option>
+            <option value="Other"></option>
+          </datalist>
+          <br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+    </div>
+    
+    
+    <div id="footer">
+      <hr> 
+      <p>Copyright &copy; Jack Farrell <br>Conatct me <a href="mailto:farrelljack741@gmail.com">here</a></p>
+    </div>
+  </body>
+</html>
